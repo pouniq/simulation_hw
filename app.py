@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    waiting = np.random.randint(1, 6, 30)
-    time_served = np.random.randint(1, 6, 30)
+    waiting = np.random.randint(1, 7, 30)
+    time_served = np.random.randint(1, 7, 30)
 
     df = pd.DataFrame({'wait': waiting, 'time': time_served})
 
